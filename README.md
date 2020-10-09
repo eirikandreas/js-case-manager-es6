@@ -4,7 +4,7 @@
 
 **Focus:**
 * JavaScript
-* ES6 Class
+* LocalStorage
 * Arrow Functions
 * HTML
 * CSS
