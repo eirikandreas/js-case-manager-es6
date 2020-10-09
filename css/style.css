@@ -1,0 +1,1210 @@
+/*------------------------------------------------
+Stilark Index
+--------------------------------------------------
+1.0 - Oppsett
+2.0 - Header / Navigajsonsmeny / Logo 
+3.0 - Sak stil
+4.0 - Ny sak stil
+5.0 - Detaljer side stil
+6.0 - Saksliste stil
+7.0 - Knapp stiler
+8.0 - Forside stil
+9.0 - Forside banner
+10.0 - Footer
+11.0 - Mobilvennlig CSS grid og col klasser
+12.0 - Media queries/ Css grid - responsive col klasser
+13.0 - MISC.
+------------------------------------------------*/
+
+/*------------------------------------------------
+1.0 - Oppsett
+------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(17, 17, 23);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+#wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+main {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.display {
+    display: none;
+}
+
+/*------------------------------------------------
+2.0 - Header / Logo / Navigasjonsmeny
+------------------------------------------------*/
+.site-header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(28, 28, 37);
+    border-bottom: 1px solid rgb(55, 58, 68);
+    color: rgb(255, 255, 255);
+}
+
+.brand {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.logo-link {
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.logo-link:hover {
+    color: rgb(14, 99, 211);
+
+}
+
+.header-menu {
+    padding-right: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline;
+    padding-left: 20px;
+}
+
+.nav-item a {
+    background-color: rgb(55, 58, 68);
+    border-radius: 20px;
+    font-size: 1rem;
+    color: rgb(155, 169, 184);
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-item a:hover {
+    background-color: rgb(14, 99, 211);
+    border-radius: 20px;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.active-link a {
+    background-color:rgb(14, 99, 211);
+    border-radius: 20px;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-margin {
+    margin-top: 60px;
+}
+
+/*------------------------------------------------
+3.0 - Sak stil
+------------------------------------------------*/
+.item-box {
+    background-color: rgb(33, 34, 44);
+    min-height: 300px;
+    border-radius: 5px;
+}
+
+.item-box img {
+    width: 100%;
+}
+
+.case-box-top {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    border-radius: 5px 5px 0 0;
+    background-color: rgb(33, 34, 44);
+    border-bottom: 1px solid rgb(55, 58, 68);
+}
+
+.case-box-top h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.case-box-top h1 {
+    font-size:1rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.case-box-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.case-box-alt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(28, 28, 37);
+    border-bottom: 1px solid rgb(55, 58, 68);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.case-box-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0px 0px 5px 5px;
+    background-color: rgb(33, 34, 44);
+    border-top: 1px solid rgb(55, 58, 68);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*------------------------------------------------
+4.0 - Ny sak stil
+------------------------------------------------*/
+.item-box-new {
+    background-color: rgb(28, 28, 37);
+    min-height: 300px;
+    border-radius: 5px;
+}
+
+.new-case-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.new-case textarea {
+    border: 1px solid rgb(55, 58, 68);
+    background-color: rgb(33, 34, 44);
+    width: 85%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 1rem;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+}
+
+#caseInputCat {
+    border: 1px solid rgb(55, 58, 68);
+    background-color: rgb(33, 34, 44);
+    color: rgb(255, 255, 255);
+    width: 85%;
+}
+
+.new-case input {
+    border: 1px solid rgb(55, 58, 68);
+    background-color: rgb(33, 34, 44);
+    border-radius: 2px;
+    font-size: 1rem;
+    width: 85%;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+::placeholder {
+    color: rgb(155, 169, 184);
+}
+
+/*------------------------------------------------
+5.0 - Detaljer side stil
+------------------------------------------------*/
+.case-single {
+    margin-bottom: 30px;
+    background-color: rgb(28, 28, 37);
+}
+
+.single-case-container h1 {
+    padding: 0;
+}
+
+.undertitle {
+    color: rgb(155, 169, 184);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.single-case-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.single-case-container h2 {
+    font-size: 1rem;
+    padding: 0;
+}
+
+.border-right {
+    border-right: none;
+}
+
+.title-spacer {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(55, 58, 68);
+}
+
+.image-container {
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+.details-img {
+    padding-left: 20px;
+}
+
+/*------------------------------------------------
+6.0 - Saksliste stil
+------------------------------------------------*/
+.list-page {
+    background-color: rgb(33, 34, 44);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#list-index {
+    border-radius: 5px 5px 0px 0px;
+    padding: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(55, 58, 68);
+}
+
+#list-view {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column-reverse;
+}
+
+#list-view li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(28, 28, 37);
+    border-bottom: 1px solid rgb(55, 58, 68);
+}
+
+#list-view li:hover {
+    background-color: rgb(33, 34, 44);
+}
+
+#list-view h1,
+h2 {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+}
+
+.case-list-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.case-list-nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.li-case {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    border: 1px solid rgb(55, 58, 68);
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+/*------------------------------------------------
+7.0 - Knapp stiler
+------------------------------------------------*/
+.case-nav button {
+    align-content: center;
+    background-color: rgb(55, 58, 68);
+    border-radius: 50%;
+    border: none;
+    color: rgb(255, 255, 255);
+    line-height: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.case-nav button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(14, 99, 211);
+}
+
+.icon-btn {
+    cursor: pointer;
+}
+
+.case-single .btn {
+    margin-left: 20px;
+}
+
+#submenu-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn {
+    background-color: rgb(14, 99, 211);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 30px 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(9, 70, 150);
+}
+
+.case-list-nav-mobile button {
+    align-content: center;
+    background-color: rgb(55, 58, 68);
+    border-radius: 50%;
+    border: none;
+    color: rgb(139, 152, 169);
+    line-height: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.case-list-nav button {
+    align-content: center;
+    background-color: rgb(55, 58, 68);
+    border-radius: 50%;
+    border: none;
+    color: rgb(255, 255, 255);
+    line-height: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.case-list-nav button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(14, 99, 211);
+}
+
+.new-case input[type="button"] {
+    width: 150px;
+    background-color: rgb(14, 99, 211);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 15px 30px 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.new-case input[type="button"]:hover {
+    background-color: rgb(9, 70, 150);
+}
+
+.mobile-nav-menu button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(14, 99, 211);
+}
+
+.case-list-nav-mobile button {
+    align-content: center;
+    background-color: rgb(55, 58, 68);
+    border-radius: 50%;
+    border: none;
+    color: rgb(139, 152, 169);
+    line-height: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.case-list-nav-mobile button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(14, 99, 211);
+}
+
+.mobile-nav-menu button {
+    align-content: center;
+    background-color: rgb(55, 58, 68);
+    border-radius: 50%;
+    border: none;
+    color: rgb(139, 152, 169);
+    line-height: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.round-icon-btn {
+    align-content: center;
+    background-color: rgb(55, 58, 68);
+    border-radius: 50%;
+    border: none;
+    color: rgb(255, 255, 255);
+    line-height: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.round-icon-btn:hover {
+    background-color: rgb(14, 99, 211);
+    color: rgb(255, 255, 255);
+    
+}
+
+
+.btn-red-slett {
+    background-color: rgb(235, 54, 54);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 50px;
+    width: 120px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn-red-slett:hover {
+    background-color: rgb(155, 36, 36);
+
+    cursor: pointer;
+}
+
+.banner-btn {
+    margin-top: 20px;
+}
+
+/*------------------------------------------------
+8.0 - Forside stil
+------------------------------------------------*/
+.cat-item {
+    background-color: rgb(55, 58, 68);
+    border-radius: 20px;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 60px;
+    font-weight: normal;
+}
+
+.case-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*------------------------------------------------
+9.0 - Forside banner
+------------------------------------------------*/
+.banner {
+    position: relative;
+    margin-top: 80px;
+    height: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#banner-content {
+    position: relative;
+    height: 400px;   
+}
+
+#banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
+}
+
+#banner-image img.active {
+    z-index: 100;
+}
+
+#banner-image img.last-active {
+    z-index: 499;
+}
+
+.banner-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    transition: ease .3s;
+    border-radius: 5px;
+}
+
+.banner-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: ease .3s;
+    border-radius: 5px;
+}
+
+.banner-image {
+    display: none;
+}
+
+.banner-case-image {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.banner-case-title {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    padding-left: 20px;
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+.fade-out {
+    animation-name: fade-out;
+    animation-duration: 1s;
+}
+
+
+@keyframes fade-out {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*------------------------------------------------
+10.0 - Footer
+------------------------------------------------*/
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.footer-buttons {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+
+}
+
+.pst-logo {
+    width: 48px;
+    height: 48px;
+    background-color: rgb(0,0,0);
+    margin-left: 20px;
+}
+
+.footer-credits {
+    padding-top: 10px;
+    font-size: .8rem;
+    background-color: rgb(28, 28, 37);
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid rgb(55, 58, 68);
+    margin-top: 20px;
+}
+
+footer {
+    width: 100%;
+    padding-top: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 34, 44);
+    border-top: 1px solid rgb(55, 58, 68);
+    margin-top: 30px;
+}
+
+/*------------------------------------------------
+11.0 - Mobilvennlig CSS grid og col klasser
+------------------------------------------------*/
+.display {
+    display: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 30px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+}
+
+.col-1 {
+    grid-column: 1 / span 1;
+    grid-column-start: auto;
+}
+
+.col-2 {
+    grid-column: 1 / span 2;
+    grid-column-start: auto;
+}
+
+.col-3 {
+    grid-column: 1 / span 3;
+    grid-column-start: auto;
+
+}
+
+.col-4 {
+    grid-column: 1 / span 4;
+    grid-column-start: auto;
+}
+
+.col-5 {
+    grid-column: 1 / span 5;
+    grid-column-start: auto;
+}
+
+
+.col-6 {
+    grid-column: 1 / span 6;
+    grid-column-start: auto;
+}
+
+.col-6 {
+    grid-column: 1 / span 6;
+}
+
+.col-8 {
+    grid-column: 1 / span 8;
+    grid-column-start: auto;
+}
+
+.col-12 {
+    grid-column: 1 / span 12;
+    grid-column-start: auto;
+}
+
+.col-12-new {
+    grid-column: 1 / span 12;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+/*------------------------------------------------
+12.0 - Media queries/ Css grid - responsive col klasser
+------------------------------------------------*/
+@media (min-width: 576px) {
+    .mobile-nav-menu {
+        display: none
+    }
+    
+    #caseInputCat {
+        border: 1px solid rgb(55, 58, 68);
+        background-color: rgb(33, 34, 44);
+        color: rgb(255, 255, 255);
+        width: 100%;
+    }
+
+    .new-case textarea {
+        border: 1px solid rgb(55, 58, 68);
+        background-color: rgb(33, 34, 44);
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        font-size: 1rem;
+        border-radius: 2px;
+        color: rgb(255, 255, 255);
+    }
+
+    .new-case input {
+        border: 1px solid rgb(55, 58, 68);
+        background-color: rgb(33, 34, 44);
+        border-radius: 2px;
+        font-size: 1rem;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+
+    .display-mobile {
+        display: none;
+    }
+
+    .case-list-nav {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .logo {
+        display: block;
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+
+    .header-menu {
+        display: block;
+    }
+
+    .logo-top {
+        margin-top: 0px;
+        position: absolute;
+        left: 50%;
+        margin-left: -60px;
+        top: 0px;
+        width: 120px;
+        height: 120px;
+        background-color: rgb(0, 0, 0);
+        z-index: 1001;
+    }
+
+    .col-xs-1 {
+        grid-column: 1 / span 1;
+        grid-column-start: auto;
+    }
+
+    .col-xs-2 {
+        grid-column: 1 / span 2;
+        grid-column-start: auto;
+    }
+
+    .col-xs-3 {
+        grid-column: 1 / span 3;
+        grid-column-start: auto;
+    }
+
+    .col-xs-4 {
+        grid-column: 1 / span 4;
+        grid-column-start: auto;
+    }
+
+    .col-xs-6 {
+        grid-column: 1 / span 6;
+        grid-column-start: auto;
+    }
+
+    .col-xs-8 {
+        grid-column: 1 / span 8;
+        grid-column-start: auto;
+    }
+
+    .col-xs-12 {
+        grid-column: 1 / span 12;
+        grid-column-start: auto;
+
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    #caseInputCat {
+        border: 1px solid rgb(55, 58, 68);
+        background-color: rgb(33, 34, 44);
+        color: rgb(255, 255, 255);
+        width: 100%;
+    }
+
+    .new-case textarea {
+        border: 1px solid rgb(55, 58, 68);
+        background-color: rgb(33, 34, 44);
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        font-size: 1rem;
+        border-radius: 2px;
+        color: rgb(255, 255, 255);
+
+    }
+
+    .new-case input {
+        border: 1px solid rgb(55, 58, 68);
+        background-color: rgb(33, 34, 44);
+        border-radius: 2px;
+        font-size: 1rem;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+
+    .display-mobile {
+        display: none;
+    }
+
+    .case-list-nav {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .logo {
+        display: block;
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+
+    .header-menu {
+        display: block;
+    }
+
+    .logo-top {
+        margin-top: 0px;
+        position: absolute;
+        left: 50%;
+        margin-left: -60px;
+        top: 0px;
+        width: 120px;
+        height: 120px;
+        background-color: rgb(0, 0, 0);
+        z-index: 1001;
+    }
+
+    .li-case {
+        display: flex;
+        align-items: center;
+    }
+
+    .display {
+        display: flex;
+    }
+
+    .col-s-1 {
+        grid-column: 1 / span 1;
+        grid-column-start: auto;
+    }
+
+    .col-s-2 {
+        grid-column: 1 / span 2;
+        grid-column-start: auto;
+    }
+
+    .col-s-3 {
+        grid-column: 1 / span 3;
+        grid-column-start: auto;
+    }
+
+    .col-s-4 {
+        grid-column: 1 / span 4;
+        grid-column-start: auto;
+    }
+
+    .col-s-6 {
+        grid-column: 1 / span 6;
+        grid-column-start: auto;
+    }
+
+    .col-s-8 {
+        grid-column: 1 / span 8;
+        grid-column-start: auto;
+    }
+
+    .col-s-12 {
+        grid-column: 1 / span 12;
+        grid-column-start: auto;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .border-right {
+        border-right: 1px solid rgb(55, 58, 68);
+    }
+
+    .display-mobile {
+        display: none;
+    }
+
+    .border-green {
+        border-left: none;
+    }
+
+    .border-red {
+        border-left: none;
+    }
+
+    #list-view .case-nav {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .li-case {
+        display: flex;
+        align-items: center;
+    }
+
+    .col-md-1 {
+        grid-column: 1 / span 1;
+        grid-column-start: auto;
+    }
+
+    .col-md-2 {
+        grid-column: 1 / span 2;
+        grid-column-start: auto;
+    }
+
+    .col-md-3 {
+        grid-column: 1 / span 3;
+        grid-column-start: auto;
+    }
+
+    .col-md-4 {
+        grid-column: 1 / span 4;
+        grid-column-start: auto;
+    }
+
+    .col-md-6 {
+        grid-column: 1 / span 6;
+        grid-column-start: auto;
+    }
+
+    .col-md-8 {
+        grid-column: 1 / span 8;
+        grid-column-start: auto;
+    }
+
+    .col-md-9 {
+        grid-column: 1 / span 9;
+        grid-column-start: auto;
+    }
+
+    .col-md-10 {
+        grid-column: 1 / span 10;
+        grid-column-start: auto;
+    }
+
+    .col-md-12 {
+        grid-column: 1 / span 12;
+        grid-column-start: auto;
+    }
+
+    #wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .border-green {
+        border-left: 2px solid rgb(54, 235, 108);
+    }
+
+    .border-red {
+        border-left: 2px solid rgb(255, 56, 56);
+
+    }
+
+}
+
+@media (max-width: 576px) {
+  
+    .display-mobile {
+        display: block;
+    }
+}
+
+/*------------------------------------------------
+13.0 - MISC.
+------------------------------------------------*/
+.status-color-green {
+    background-color: rgba(54, 235, 108, .1);
+    border-radius: 20px;
+    font-size: 1rem;
+    color: rgb(54, 235, 108);
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    min-width: 60px;
+    font-weight: normal;
+}
+
+.status-color-red {
+    background-color: rgba(255, 56, 56, .1);
+    border-radius: 20px;
+    font-size: 1rem;
+    color: rgb(255, 56, 56);
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    min-width: 60px;
+    font-weight: normal;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.page-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+}
+
+#page-title {
+    padding-left: 20px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+#submenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.page-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#status-top {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.no-cases {
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    text-align: center;
+    font-size: 3rem;
+    color: #999;
+}
+
+.notify-p {
+    padding-top: 10px;
+    font-size: .8rem;
+}
